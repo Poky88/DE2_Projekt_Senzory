@@ -21,7 +21,7 @@ Optický senzor ovzduší GP2Y1010AU0F
 - Senzor částic prachu a kouře
 
 OLED displej
-- dgdg
+- IIC I2C OLED displej 1,3" - Bílý, 128 x 64
 
 # Schéma zapojení
 
