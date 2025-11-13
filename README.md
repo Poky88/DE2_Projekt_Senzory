@@ -6,6 +6,8 @@ such as DHTx, MQx, SQP4x, SDS011, etc. Display data on a display or send it to a
 
 Tomáš Pokorný
 Tomáš Rosa
+Dominik Uherka
+Daniel Valčík
 
 # Popis zapojení a komponent
 
@@ -15,7 +17,13 @@ Senzor MQ-9
 Senzor DHT 11
 - Senzor teploty a vlhkosti
 
-Oled Displej
+Optický senzor ovzduší GP2Y1010AU0F
+- Senzor částic prachu a kouře
+
+OLED displej
+- 
+
+# Schéma zapojení
 
 
 # Popis programu
