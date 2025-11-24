@@ -18,16 +18,23 @@ založený na mikrokontroléru ATmega328
 # Popis komponent
 
 Senzor MQ-135
-- Senzor oxidu uhličitého (CO2)
 
 Senzor MQ-135 je detktor plynů, určený pro monitorování kvality ovzduší. Aktivním prvkem senzoru je tenká vrstva oxidu cíničitého (SnO2), jejíž elektrický odpor se mění v závislosti na přítomnosti a koncentraci určitých plynů. Tento mechanismus umožňuje senzoru reagovat zejména na amoniak (NH3), oxid dusíku (NOx), kouřové částice a především oxid uhličitý (CO2), který je v projektu využíván a zobrazován.
 
+<img width="510" height="510" alt="image" src="https://github.com/user-attachments/assets/5b4b8167-b24f-428c-abb8-88ab65c619fb" />
+
+
 Senzor DHT 11
-- Senzor teploty a vlhkosti
 
 Senzor DHT11 je určený pro měření teploty a relativní vlhkosti vzduchu. Tento typ integruje teplotní čidlo a kapacitní senzor vlhkosti v jednom pouzdře.
 
 Model DHT11 poskytuje teplotní rozsah od 0 do 50 °C s přesností ± 1 °C a relativní vlhkost mezi 20 až 90 % s odchylkou ±4 %.
+
+
+Senzor DHT11 je digitální snímač teploty a vlhkosti. Senzor se skládá z rezistivních snímačů vlhkosti a teplotního měřicího zařízení NTC (Negative Temperature Coefficient). Komunikace mezi snímačem DHT11 a řídicím mikrokontrolérem probíhá pomocí zjednodušeného jednovodičového sériového protokolu.
+
+<img width="1080" height="1080" alt="image" src="https://github.com/user-attachments/assets/0179e0f3-a192-49c1-9566-df1eb6b1592a" />
+
 
 Optický senzor ovzduší GP2Y1010AU0F
 - Senzor částic prachu a kouře
