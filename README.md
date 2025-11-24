@@ -36,14 +36,14 @@ Snímač GP2Y1010AU0F je kompaktní optický senzor určený k detekci prachový
 
 
 <div align="center">
-<img width="400" height="125" alt="image" src="https://github.com/user-attachments/assets/34d67dae-0c7e-4753-bd34-a98dce7ac287" />
+<img width="400" height="510" alt="image" src="https://github.com/user-attachments/assets/4d161eb7-4fa0-4e3c-b817-3c8c11bbb309" />
 </div>
 
 ### OLED displej
 Displej IIC I2C je kompaktní grafický modul využívající technologii OLED. Jedná se o nízkoenergetické zobrazovací zařízení vhodné pro přenosné aplikace a vestavné systémy. Modul je tvořen matričním displejem o úhlopříčce 0,96 palce a disponuje rozlišením 128 x 64 pixelů. Modul je řízen pomocí externího řadiče (Controller IC). Pro komunikaci s mikrokontrolérem je v implementacích tohoto typu displeje využíváno sériové rozhraní I2C. Řadič přijímá zobrazovaná data a řídicí příkazy, na jejichž základě řídí jednotlivé pixely.
 
 <div align="center">
-<img width="400" height="262" alt="image" src="https://github.com/user-attachments/assets/21906bc3-fba0-45bc-bdf0-2d02bbbcf498" />
+<img width="400" height="510" alt="image" src="https://github.com/user-attachments/assets/4a3a1e4a-426f-4813-9ed6-d736cfc0499c" />
 </div>
 
 # Schéma zapojení
