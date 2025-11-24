@@ -23,7 +23,7 @@ Senzor MQ-135 je detktor plynů, určený pro monitorování kvality ovzduší. 
 
 <div align="center">
 <img width="400" height="510" alt="Senzor MQ-135" src="https://github.com/user-attachments/assets/5b4b8167-b24f-428c-abb8-88ab65c619fb" />
-
+</div>
 
 Senzor DHT 11
 
