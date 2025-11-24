@@ -18,33 +18,33 @@ založený na mikrokontroléru ATmega328
 # Popis komponent
 
 ### Senzor MQ-135
-
 Senzor MQ-135 je detktor plynů, určený pro monitorování kvality ovzduší. Aktivním prvkem senzoru je tenká vrstva oxidu cíničitého (SnO2), jejíž elektrický odpor se mění v závislosti na přítomnosti a koncentraci určitých plynů. Tento mechanismus umožňuje senzoru reagovat zejména na amoniak (NH3), oxid dusíku (NOx), kouřové částice a především oxid uhličitý (CO2), který je v projektu využíván a zobrazován.
 
 <div align="center">
 <img width="400" height="510" alt="Senzor MQ-135" src="https://github.com/user-attachments/assets/5b4b8167-b24f-428c-abb8-88ab65c619fb" />
 </div>
 
-Senzor DHT 11
-
-Senzor DHT11 je určený pro měření teploty a relativní vlhkosti vzduchu. Tento typ integruje teplotní čidlo a kapacitní senzor vlhkosti v jednom pouzdře.
-
-Model DHT11 poskytuje teplotní rozsah od 0 do 50 °C s přesností ± 1 °C a relativní vlhkost mezi 20 až 90 % s odchylkou ±4 %.
-
-
-Senzor DHT11 je digitální snímač teploty a vlhkosti. Senzor se skládá z rezistivních snímačů vlhkosti a teplotního měřicího zařízení NTC (Negative Temperature Coefficient). Komunikace mezi snímačem DHT11 a řídicím mikrokontrolérem probíhá pomocí zjednodušeného jednovodičového sériového protokolu.
+### Senzor DHT 11
+Senzor DHT11 je digitální snímač teploty a vlhkosti. Senzor se skládá z rezistivních snímačů vlhkosti a teplotního měřicího zařízení NTC (Negative Temperature Coefficient). Komunikace mezi snímačem DHT11 a řídicím mikrokontrolérem probíhá pomocí zjednodušeného jednovodičového sériového protokolu. Model DHT11 poskytuje teplotní rozsah od 0 do 50 °C s přesností ± 1 °C a relativní vlhkost mezi 20 až 90 % s odchylkou ±4 %.
 
 <div align="center">
 <img width="400" height="1080" alt="image" src="https://github.com/user-attachments/assets/0179e0f3-a192-49c1-9566-df1eb6b1592a" />
 </div>
 
-Optický senzor ovzduší GP2Y1010AU0F
-- Senzor částic prachu a kouře
+### Optický senzor ovzduší GP2Y1010AU0F
+Snímač GP2Y1010AU0F je kompaktní optický senzor určený k detekci prachových částic ve vzduchu. Využívá optický snímací systém a je zvláště efektivní pro detekci velmi jemných částic. Snímač funguje na principu fotometrie (měření intenzity světla). Vzduch obsahující prachové částice prochází detekčním prostorem senzoru. Pokud je přítomna částice, dojde k rozptylu světla emitovaného diodou IRED. Rozptýlené světlo je zachyceno fototranzistorem, který následně generuje elektrický signál úměrný intenzitě detekovaného rozptýleného světla. Tento signál je následně zesílen pomocí integrovaného zesilovače.
 
 
+<div align="center">
+<img width="400" height="125" alt="image" src="https://github.com/user-attachments/assets/34d67dae-0c7e-4753-bd34-a98dce7ac287" />
+</div>
 
-OLED displej
-- IIC I2C OLED displej 1,3" - Bílý, 128 x 64
+### OLED displej
+Displej IIC I2C je kompaktní grafický modul využívající technologii OLED. Jedná se o nízkoenergetické zobrazovací zařízení vhodné pro přenosné aplikace a vestavné systémy. Modul je tvořen matričním displejem o úhlopříčce 0,96 palce a disponuje rozlišením 128 x 64 pixelů. Modul je řízen pomocí externího řadiče (Controller IC). Pro komunikaci s mikrokontrolérem je v implementacích tohoto typu displeje využíváno sériové rozhraní I2C. Řadič přijímá zobrazovaná data a řídicí příkazy, na jejichž základě řídí jednotlivé pixely.
+
+<div align="center">
+<img width="400" height="262" alt="image" src="https://github.com/user-attachments/assets/21906bc3-fba0-45bc-bdf0-2d02bbbcf498" />
+</div>
 
 # Schéma zapojení
 
