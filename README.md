@@ -47,13 +47,14 @@ OLED displej
 
 # Schéma zapojení
 
-<img width="1112" height="535" alt="image" src="https://github.com/user-attachments/assets/754fa839-44c8-4cb4-887a-250628d83489" />
+<div align="center">
+<img width="400" height="535" alt="image" src="https://github.com/user-attachments/assets/754fa839-44c8-4cb4-887a-250628d83489" />
 
+<div align="center">
+<img width="400" height="622" alt="image" src="https://github.com/user-attachments/assets/97b443f3-bff2-46ef-b072-c82cc8e6e825" />
 
-<img width="782" height="622" alt="image" src="https://github.com/user-attachments/assets/97b443f3-bff2-46ef-b072-c82cc8e6e825" />
-
-
-<img width="770" height="598" alt="image" src="https://github.com/user-attachments/assets/0d18a866-019d-4f36-9a21-ac04f78ff7a2" />
+<div align="center">
+<img width="400" height="598" alt="image" src="https://github.com/user-attachments/assets/0d18a866-019d-4f36-9a21-ac04f78ff7a2" />
 
 
 # Popis programu
