@@ -1,6 +1,5 @@
-# Indoor air quality monitoring system
-Measure temperature, humidity, CO2, and particulate matter (PM2.5/PM10) using sensors 
-such as DHTx, MQx, SQP4x, SDS011, etc. Display data on a display or send it to a web dashboard.
+# Monitorování kvality ovzduší
+Tento kompaktní systém, postavený na platformě Arduino, umožňuje sledování teploty, vlhkosti, koncentrace CO₂ a množství prachových částic. Arduino zajišťuje rychlé zpracování dat ze senzorů, jako jsou DHTx, MQx, SQP4x nebo SDS011, a okamžitě je přehledně zobrazuje na displeji. Díky tomu máte všechny důležité informace o kvalitě vzduchu neustále na očích.
 
 # Členové týmu
 
