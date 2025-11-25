@@ -35,7 +35,7 @@ Senzor **nereaguje na jeden konkrétní plyn**, ale na **celou směs látek**, z
 
 V projektu slouží MQ-135 jako **indikátor znečištění vzduchu**, nikoliv jako přesný měřicí přístroj. Jeho výstup je analogový, proto jej mikrokontrolér zpracovává pomocí analogově-digitálního převodníku.
 
-Typické orientační hodnoty:
+**Typické orientační hodnoty:**
 - 0 → běžný „čistý“ vnitřní vzduch
 - 200–300 → vaření, čističe, parfém, zhoršená kvalita vzduchu
 - 500+ → silné výpary, kouř nebo přítomnost plynu
