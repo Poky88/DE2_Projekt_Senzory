@@ -10,29 +10,31 @@ such as DHTx, MQx, SQP4x, SDS011, etc. Display data on a display or send it to a
 - Daniel Valčík
 
 # Návrh a popis projektu
-V tomto projektu se věnujeme návrhem a realizací měření různých veličin. Cílem projektu je pomocí senzorů přijímat data, které jsou zpracovány a zobrazovány na displeji. Díky tomu může uživatel získat informace o okolní teplotě a vlhkosti, množství oxidu uhelnatého, nebo množství prachových částic. 
-ještě dopsat:
-založený na mikrokontroléru ATmega328
+V tomto projektu se věnujeme návrhem a realizací měření různých veličin souvisejících s kvalitou ovzduší. Cílem projektu je pomocí senzorů přijímat data, které jsou zpracovány a zobrazovány na displeji. Díky tomu může uživatel získat základní parametry okolního ovzduší. Data získáváme pomocí čtyř senzorů, které monitorují teplotu a relativní vlhkost, koncentraci CO₂ a množství prachových částic. Následně mikrokontrolér ATmega328, který slouží jako centrální jednotka zajišťující komunikaci se senzory data zpracová a zobrazuje na OLED displeji.
 
+
+<div align="center">
+<img width="400" height="1024" alt="image" src="https://github.com/user-attachments/assets/d136b4e3-11a7-4141-b94c-7681a828e50b" />
+</div>
 
 # Popis komponent
 
 ### Senzor MQ-135
-Senzor MQ-135 je detktor plynů, určený pro monitorování kvality ovzduší. Aktivním prvkem senzoru je tenká vrstva oxidu cíničitého (SnO2), jejíž elektrický odpor se mění v závislosti na přítomnosti a koncentraci určitých plynů. Tento mechanismus umožňuje senzoru reagovat zejména na amoniak (NH3), oxid dusíku (NOx), kouřové částice a především oxid uhličitý (CO2), který je v projektu využíván a zobrazován.
+Senzor MQ-135 je určen pro monitorování kvality ovzduší a pracuje na principu změny elektrického odporu v závislosti na přítomnosti různých plynů. Aktivní vrstvu senzoru tvoří oxid cíničitý (SnO₂), jehož vodivost se mění podle koncentrace amoniaku, oxidů dusíku, kouřových složek a zejména oxidu uhličitého. V projektu slouží MQ-135 pro měření koncentrace CO₂. Jeho výstup je analogový, a proto jej mikrokontrolér zpracovává pomocí analogově-digitálního převodníku.
 
 <div align="center">
 <img width="400" height="510" alt="Senzor MQ-135" src="https://github.com/user-attachments/assets/5b4b8167-b24f-428c-abb8-88ab65c619fb" />
 </div>
 
 ### Senzor DHT 11
-Senzor DHT11 je digitální snímač teploty a vlhkosti. Senzor se skládá z rezistivních snímačů vlhkosti a teplotního měřicího zařízení NTC (Negative Temperature Coefficient). Komunikace mezi snímačem DHT11 a řídicím mikrokontrolérem probíhá pomocí zjednodušeného jednovodičového sériového protokolu. Model DHT11 poskytuje teplotní rozsah od 0 do 50 °C s přesností ± 1 °C a relativní vlhkost mezi 20 až 90 % s odchylkou ±4 %.
+Senzor DHT11 je digitální snímač teploty a vlhkosti, který obsahuje rezistivní polymerový senzor pro měření vlhkosti a teplotní čidlo typu NTC. Komunikuje s mikrokontrolérem pomocí jednoduchého jednovodičového protokolu, při němž po inicializačním signálu ze strany mikrokontroléru odešle digitální informaci o teplotě a relativní vlhkosti. Umožňuje měřit teploty v rozsahu od 0 do 50 °C s přesností ±1 °C a relativní vlhkost od 20 do 90 % s odchylkou přibližně ±4 %. Senzor je vhodný pro aplikace s pomaleji se měnícími hodnotami prostředí.
 
 <div align="center">
 <img width="400" height="1080" alt="image" src="https://github.com/user-attachments/assets/0179e0f3-a192-49c1-9566-df1eb6b1592a" />
 </div>
 
 ### Optický senzor ovzduší GP2Y1010AU0F
-Snímač GP2Y1010AU0F je kompaktní optický senzor určený k detekci prachových částic ve vzduchu. Využívá optický snímací systém a je zvláště efektivní pro detekci velmi jemných částic. Snímač funguje na principu fotometrie (měření intenzity světla). Vzduch obsahující prachové částice prochází detekčním prostorem senzoru. Pokud je přítomna částice, dojde k rozptylu světla emitovaného diodou IRED. Rozptýlené světlo je zachyceno fototranzistorem, který následně generuje elektrický signál úměrný intenzitě detekovaného rozptýleného světla. Tento signál je následně zesílen pomocí integrovaného zesilovače.
+Optický senzor GP2Y1010AU0F je určený k detekci prachových částic ve vzduchu a pracuje na principu rozptylu světla. Uvnitř senzoru se nachází infračervená LED dioda, která vysílá světelný paprsek do měřicí komory. Pokud vzduchem prochází prachová částice, světlo se na ní rozptyluje a jeho část dopadá na fototranzistor. Ten následně generuje elektrický signál úměrný množství rozptýleného světla, přičemž tento signál je dále zesílen integrovaným zesilovačem. V zapojení se používá rezistor, který omezuje proud tekoucí LED diodou a zajišťuje stabilní intenzitu světelného pulzu. Kondenzátor v obvodu slouží k filtraci napájecího napětí, protože senzor je citlivý na šum a jakékoli kolísání napětí by mohlo způsobit nestabilitu nebo nepřesnost měření. Kondenzátor tedy snižuje rušení a přispívá k celkové stabilitě senzoru.
 
 
 <div align="center">
@@ -40,7 +42,7 @@ Snímač GP2Y1010AU0F je kompaktní optický senzor určený k detekci prachový
 </div>
 
 ### OLED displej
-Displej IIC I2C je kompaktní grafický modul využívající technologii OLED. Jedná se o nízkoenergetické zobrazovací zařízení vhodné pro přenosné aplikace a vestavné systémy. Modul je tvořen matričním displejem o úhlopříčce 0,96 palce a disponuje rozlišením 128 x 64 pixelů. Modul je řízen pomocí externího řadiče (Controller IC). Pro komunikaci s mikrokontrolérem je v implementacích tohoto typu displeje využíváno sériové rozhraní I2C. Řadič přijímá zobrazovaná data a řídicí příkazy, na jejichž základě řídí jednotlivé pixely.
+OLED displej o úhlopříčce 0,96 palce a rozlišení 128 × 64 pixelů představuje energeticky úsporné grafické zobrazovací zařízení vhodné pro tento projekt. Technologie OLED nabízí vysoký kontrast a dobrou čitelnost i při nízké spotřebě energie. Displej je řízen pomocí integrovaného řadiče, který zpracovává data a příkazy přicházející z mikrokontroléru. Komunikace probíhá přes sériové rozhraní I2C, což minimalizuje počet potřebných vodičů a zjednodušuje celkové zapojení. Na displeji se zobrazují všechny naměřené hodnoty jednotlivých senzorů, přičemž uživatel tak získává okamžitý přehled o aktuální kvalitě ovzduší.
 
 <div align="center">
 <img width="400" height="510" alt="image" src="https://github.com/user-attachments/assets/4a3a1e4a-426f-4813-9ed6-d736cfc0499c" />
