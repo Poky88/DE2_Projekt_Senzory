@@ -56,6 +56,11 @@ DHT12 umožňuje měřit:
 <img width="400" height="1080" alt="image" src="https://github.com/user-attachments/assets/0179e0f3-a192-49c1-9566-df1eb6b1592a" />
 </div>
 
+
+<div align="center">
+<img width="400" height="1080" alt="image" src="[https://github.com/user-attachments/assets/0179e0f3-a192-49c1-9566-df1eb6b1592a](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.satistronics.com%2Fshop%2F180808-dht12-digital-temperature-and-humidity-sensor-module-i2c-compatible-dht11-2227&psig=AOvVaw2EDLEuvT7aSVjqR10F02Bd&ust=1764178678669000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCIDHku7rjZEDFQAAAAAdAAAAABAE)" />
+</div>
+
 ### Optický senzor ovzduší GP2Y1010AU0F
 Optický senzor GP2Y1010AU0F je určený k detekci prachových částic ve vzduchu a pracuje na principu rozptylu světla. Uvnitř senzoru se nachází infračervená LED dioda, která vysílá světelný paprsek do měřicí komory. Pokud vzduchem prochází prachová částice, světlo se na ní rozptyluje a jeho část dopadá na fototranzistor. Ten následně generuje elektrický signál úměrný množství rozptýleného světla, přičemž tento signál je dále zesílen integrovaným zesilovačem. V zapojení se používá rezistor, který omezuje proud tekoucí LED diodou a zajišťuje stabilní intenzitu světelného pulzu. Kondenzátor v obvodu slouží k filtraci napájecího napětí, protože senzor je citlivý na šum a jakékoli kolísání napětí by mohlo způsobit nestabilitu nebo nepřesnost měření. Kondenzátor tedy snižuje rušení a přispívá k celkové stabilitě senzoru.
 
