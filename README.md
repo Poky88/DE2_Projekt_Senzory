@@ -1,6 +1,10 @@
 # Monitorování kvality ovzduší
 Tento kompaktní systém postavený na platformě Arduino umožňuje sledovat klíčové parametry kvality ovzduší. Arduino zajišťuje rychlé a spolehlivé zpracování dat ze senzorů a jejich okamžité zobrazení na displeji. Díky tomu máte všechny podstatné informace o stavu vzduchu neustále přehledně k dispozici.
 
+<div align="center">
+<img width="400" height="1024" alt="image" src="https://github.com/user-attachments/assets/d136b4e3-11a7-4141-b94c-7681a828e50b" />
+</div>
+
 # Členové týmu
 
 - Tomáš Pokorný
@@ -13,7 +17,7 @@ V tomto projektu se věnujeme návrhem a realizací měření různých veličin
 
 
 <div align="center">
-<img width="400" height="1024" alt="image" src="https://github.com/user-attachments/assets/d136b4e3-11a7-4141-b94c-7681a828e50b" />
+<img width="400" height="523" alt="image" src="https://github.com/user-attachments/assets/ab5eba99-46fc-4661-87fd-8c39425a7338" />
 </div>
 
 # Popis komponent
@@ -54,12 +58,9 @@ OLED displej o úhlopříčce 0,96 palce a rozlišení 128 × 64 pixelů předst
 </div>
 
 <div align="center">
-<img width="400" height="622" alt="image" src="https://github.com/user-attachments/assets/97b443f3-bff2-46ef-b072-c82cc8e6e825" />
+<img width="400" height="515" alt="image" src="https://github.com/user-attachments/assets/60b26543-a79d-4fed-ac7f-87b488875818" />
 </div>
 
-<div align="center">
-<img width="400" height="598" alt="image" src="https://github.com/user-attachments/assets/0d18a866-019d-4f36-9a21-ac04f78ff7a2" />
-</div>
 
 
 # Popis programu
