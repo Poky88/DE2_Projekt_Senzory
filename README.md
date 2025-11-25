@@ -58,7 +58,7 @@ DHT12 umožňuje měřit:
 
 
 <div align="center">
-<img width="400" height="1080" alt="image" src="[https://github.com/user-attachments/assets/0179e0f3-a192-49c1-9566-df1eb6b1592a](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.satistronics.com%2Fshop%2F180808-dht12-digital-temperature-and-humidity-sensor-module-i2c-compatible-dht11-2227&psig=AOvVaw2EDLEuvT7aSVjqR10F02Bd&ust=1764178678669000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCIDHku7rjZEDFQAAAAAdAAAAABAE)" />
+<img width="400" height="1080" alt="image" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.satistronics.com%2Fshop%2F180808-dht12-digital-temperature-and-humidity-sensor-module-i2c-compatible-dht11-2227&psig=AOvVaw2EDLEuvT7aSVjqR10F02Bd&ust=1764178678669000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCIDHku7rjZEDFQAAAAAdAAAAABAE" />
 </div>
 
 ### Optický senzor ovzduší GP2Y1010AU0F
