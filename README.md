@@ -13,7 +13,7 @@ Tento kompaktní systém postavený na platformě Arduino umožňuje sledovat kl
 - Daniel Valčík
 
 # Návrh a popis projektu
-V tomto projektu se věnujeme návrhem a realizací měření různých veličin souvisejících s kvalitou ovzduší. Cílem projektu je pomocí senzorů přijímat data, které jsou zpracovány a zobrazovány na displeji. Díky tomu může uživatel získat základní parametry okolního ovzduší. Data získáváme pomocí čtyř senzorů, které monitorují teplotu a relativní vlhkost, koncentraci CO₂ a množství prachových částic. Následně mikrokontrolér ATmega328, který slouží jako centrální jednotka zajišťující komunikaci se senzory data zpracová a zobrazuje na OLED displeji.
+V tomto projektu se věnujeme návrhem a realizací měření různých veličin souvisejících s kvalitou ovzduší. Cílem projektu je pomocí senzorů přijímat data, které jsou zpracovány a zobrazovány na displeji. Díky tomu může uživatel získat základní parametry okolního ovzduší. Data získáváme pomocí čtyř senzorů, které monitorují teplotu a relativní vlhkost, koncentraci plynů a množství prachových částic. Následně mikrokontrolér ATmega328, který slouží jako centrální jednotka zajišťující komunikaci se senzory data zpracová a zobrazuje na OLED displeji.
 
 
 <div align="center">
@@ -21,16 +21,36 @@ V tomto projektu se věnujeme návrhem a realizací měření různých veličin
 </div>
 
 # Popis komponent
-
 ### Senzor MQ-135
-Senzor MQ-135 je určen pro monitorování kvality ovzduší a pracuje na principu změny elektrického odporu v závislosti na přítomnosti různých plynů. Aktivní vrstvu senzoru tvoří oxid cíničitý (SnO₂), jehož vodivost se mění podle koncentrace amoniaku, oxidů dusíku, kouřových složek a zejména oxidu uhličitého. V projektu slouží MQ-135 pro měření koncentrace CO₂. Jeho výstup je analogový, a proto jej mikrokontrolér zpracovává pomocí analogově-digitálního převodníku.
+Senzor **MQ-135** slouží k orientačnímu měření kvality ovzduší. Jeho aktivní vrstvu tvoří **oxid cíničitý (SnO₂)**, jehož vodivost se mění v přítomnosti různých plynů a výparů.
+
+Senzor **nereaguje na jeden konkrétní plyn**, ale na **celou směs látek**, zejména:
+- amoniak (NH₃),
+- oxidy dusíku,
+- organické výpary (VOC),
+- výpary z čisticích prostředků a parfémů,
+- kouř,
+- výfukové a domácí plyny,
+- butan/propán (např. ze zapalovače).
+
+V projektu slouží MQ-135 jako **indikátor znečištění vzduchu**, nikoliv jako přesný měřicí přístroj. Jeho výstup je analogový, proto jej mikrokontrolér zpracovává pomocí analogově-digitálního převodníku.
+
+Typické orientační hodnoty:
+- 0 → běžný „čistý“ vnitřní vzduch
+- 200–300 → vaření, čističe, parfém, zhoršená kvalita vzduchu
+- 500+ → silné výpary, kouř nebo přítomnost plynu
 
 <div align="center">
 <img width="400" height="510" alt="Senzor MQ-135" src="https://github.com/user-attachments/assets/5b4b8167-b24f-428c-abb8-88ab65c619fb" />
 </div>
 
-### Senzor DHT 11
-Senzor DHT11 je digitální snímač teploty a vlhkosti, který obsahuje rezistivní polymerový senzor pro měření vlhkosti a teplotní čidlo typu NTC. Komunikuje s mikrokontrolérem pomocí jednoduchého jednovodičového protokolu, při němž po inicializačním signálu ze strany mikrokontroléru odešle digitální informaci o teplotě a relativní vlhkosti. Umožňuje měřit teploty v rozsahu od 0 do 50 °C s přesností ±1 °C a relativní vlhkost od 20 do 90 % s odchylkou přibližně ±4 %. Senzor je vhodný pro aplikace s pomaleji se měnícími hodnotami prostředí.
+### Senzor DHT12
+Senzor **DHT12** je digitální snímač teploty a vlhkosti, který komunikuje s mikrokontrolérem prostřednictvím sběrnice **I²C**. Na rozdíl od senzoru DHT11 nevyužívá jednovodičový protokol, což zjednodušuje integraci v systémech využívajících více digitálních zařízení.
+Pro měření vlhkosti využívá senzor kapacitní polymerový prvek a pro měření teploty obsahuje integrované teplotní čidlo. Data o aktuální teplotě a vlhkosti jsou poskytována v digitální podobě bez potřeby dodatečné kalibrace.
+
+DHT12 umožňuje měřit:
+- **teplotu** v rozsahu **–20 až +60 °C** s typickou přesností **±0,5 °C**,  
+- **relativní vlhkost** v rozsahu **20 až 95 %** s přesností **±3 až ±5 %**.
 
 <div align="center">
 <img width="400" height="1080" alt="image" src="https://github.com/user-attachments/assets/0179e0f3-a192-49c1-9566-df1eb6b1592a" />
