@@ -45,7 +45,7 @@ Typické orientační hodnoty:
 </div>
 
 ### Senzor DHT12
-Senzor **DHT12** je digitální snímač teploty a vlhkosti, který komunikuje s mikrokontrolérem prostřednictvím sběrnice **I²C**. Na rozdíl od senzoru DHT11 nevyužívá jednovodičový protokol, což zjednodušuje integraci v systémech využívajících více digitálních zařízení.
+Senzor **DHT12** je digitální snímač teploty a vlhkosti, který komunikuje s mikrokontrolérem prostřednictvím sběrnice **I²C**.
 Pro měření vlhkosti využívá senzor kapacitní polymerový prvek a pro měření teploty obsahuje integrované teplotní čidlo. Data o aktuální teplotě a vlhkosti jsou poskytována v digitální podobě bez potřeby dodatečné kalibrace.
 
 DHT12 umožňuje měřit:
