@@ -1,5 +1,5 @@
 # Monitorování kvality ovzduší
-Tento kompaktní systém, postavený na platformě Arduino, umožňuje sledování teploty, vlhkosti, koncentrace CO₂ a množství prachových částic. Arduino zajišťuje rychlé zpracování dat ze senzorů, jako jsou DHTx, MQx, SQP4x nebo SDS011, a okamžitě je přehledně zobrazuje na displeji. Díky tomu máte všechny důležité informace o kvalitě vzduchu neustále na očích.
+Tento kompaktní systém postavený na platformě Arduino umožňuje sledovat klíčové parametry kvality ovzduší. Arduino zajišťuje rychlé a spolehlivé zpracování dat ze senzorů a jejich okamžité zobrazení na displeji. Díky tomu máte všechny podstatné informace o stavu vzduchu neustále přehledně k dispozici.
 
 # Členové týmu
 
