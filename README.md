@@ -48,7 +48,7 @@ V projektu slouží MQ-135 jako **indikátor znečištění vzduchu**, nikoliv j
 Senzor **DHT12** je digitální snímač teploty a vlhkosti, který komunikuje s mikrokontrolérem prostřednictvím sběrnice **I²C**.
 Pro měření vlhkosti využívá senzor kapacitní polymerový prvek a pro měření teploty obsahuje integrované teplotní čidlo. Data o aktuální teplotě a vlhkosti jsou poskytována v digitální podobě bez potřeby dodatečné kalibrace.
 
-DHT12 umožňuje měřit:
+**DHT12 umožňuje měřit:**
 - **teplotu** v rozsahu **–20 až +60 °C** s typickou přesností **±0,5 °C**,  
 - **relativní vlhkost** v rozsahu **20 až 95 %** s přesností **±3 až ±5 %**.
 
