@@ -2,7 +2,7 @@
 Tento kompaktní systém postavený na platformě Arduino umožňuje sledovat klíčové parametry kvality ovzduší. Arduino zajišťuje rychlé a spolehlivé zpracování dat ze senzorů a jejich okamžité zobrazení na displeji. Díky tomu máte všechny podstatné informace o stavu vzduchu neustále přehledně k dispozici.
 
 <div align="center">
-<img width="400" height="1024" alt="image" src="https://github.com/user-attachments/assets/d136b4e3-11a7-4141-b94c-7681a828e50b" />
+<img width="400" height="622" alt="image" src="https://github.com/user-attachments/assets/3c4fc4d3-3641-472f-807d-b1a9bc6bc7e7" />
 </div>
 
 # Členové týmu
