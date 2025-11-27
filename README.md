@@ -7,10 +7,10 @@ Tento kompaktní systém postavený na platformě Arduino umožňuje sledovat kl
 
 # Členové týmu
 
-- Tomáš Pokorný
-- Tomáš Rosa
-- Dominik Uherka
-- Daniel Valčík
+- Tomáš Pokorný: GitHub master
+- Tomáš Rosa: programátor, GitHub
+- Dominik Uherka: video maker, tvorba dokumentace
+- Daniel Valčík: hlavní programátor
 
 # Návrh a popis projektu
 V tomto projektu se věnujeme návrhem a realizací měření různých veličin souvisejících s kvalitou ovzduší. Cílem projektu je pomocí senzorů přijímat data, které jsou zpracovány a zobrazovány na displeji. Díky tomu může uživatel získat základní parametry okolního ovzduší. Data získáváme pomocí čtyř senzorů, které monitorují teplotu a relativní vlhkost, koncentraci plynů a množství prachových částic. Následně mikrokontrolér ATmega328, který slouží jako centrální jednotka zajišťující komunikaci se senzory data zpracová a zobrazuje na OLED displeji.
