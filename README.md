@@ -49,7 +49,7 @@ Pro měření vlhkosti využívá senzor kapacitní polymerový prvek a pro mě�
 - **relativní vlhkost** v rozsahu **20 až 95 %** s přesností **±3 až ±5 %**.
 
 <div align="center">
-<img width="400" height="1080" alt="image" src="https://github.com/user-attachments/assets/0179e0f3-a192-49c1-9566-df1eb6b1592a" />
+<img width="400" height="352" alt="image" src="https://github.com/user-attachments/assets/9888b0fa-84c1-4e4d-9c67-af3ffe63f7aa" />
 </div>
 
 ### Optický senzor ovzduší GP2Y1010AU0F
