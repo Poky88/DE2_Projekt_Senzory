@@ -15,6 +15,9 @@ Tento kompaktní systém postavený na platformě Arduino umožňuje sledovat kl
 # Návrh a popis projektu
 V tomto projektu se věnujeme návrhem a realizací měření různých veličin souvisejících s kvalitou ovzduší. Cílem projektu je pomocí senzorů přijímat data, které jsou zpracovány a zobrazovány na displeji. Díky tomu může uživatel získat základní parametry okolního ovzduší. Data získáváme pomocí čtyř senzorů, které monitorují teplotu a relativní vlhkost, koncentraci plynů a množství prachových částic. Následně mikrokontrolér ATmega328, který slouží jako centrální jednotka zajišťující komunikaci se senzory data zpracová a zobrazuje na OLED displeji.
 
+<div align="center">
+<img width="400" height="3024" alt="image" src="https://github.com/user-attachments/assets/f2a5c6f7-567f-46bb-8e47-0a5b9fbad628" />
+</div>
 
 # Popis komponent
 ### Senzor MQ-135
