@@ -84,4 +84,9 @@ OLED displej o úhlopříčce 0,96 palce a rozlišení 128 × 64 pixelů předst
 # Demontrační video
 
 
+
+https://github.com/user-attachments/assets/224a8f2f-f5b7-4f19-9710-5e3e66e5539a
+
+
+
 # Demonstrační poster
