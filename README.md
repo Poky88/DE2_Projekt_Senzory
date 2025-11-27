@@ -77,11 +77,6 @@ OLED displej o úhlopříčce 0,96 palce a rozlišení 128 × 64 pixelů předst
 <img width="400" height="645" alt="image" src="https://github.com/user-attachments/assets/07d37035-9cf0-41bf-9220-278c728942ec" />
 </div>
 
-<div align="center">
-<img width="400" height="874" alt="image" src="https://github.com/user-attachments/assets/563b94ab-5330-43ff-936d-617a24f2f7e0" />
-</div>
-
-
 
 # Popis programu
 
