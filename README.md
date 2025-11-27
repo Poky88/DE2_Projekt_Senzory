@@ -92,8 +92,6 @@ https://github.com/user-attachments/assets/224a8f2f-f5b7-4f19-9710-5e3e66e5539a
 # Demonstrační poster
 
 # Zdroje
-- Zapojení, specifikace senzorů
-
 - GP2Y1010: https://dratek.cz/arduino-platforma/1126-opticky-senzor-kvality-ovzdusi-gp2y1010au0f.html?gad_source=1&gad_campaignid=17190055571&gbraid=0AAAAACVG_WdMdsI9GgEBoBiqihpy8xbHf&gclid=Cj0KCQiAiqDJBhCXARIsABk2kSmGebZPVCR5Vj_lhDj5BpFCFtRr2RC84YoECgKVjbpFDe2vHHXAIBkaAld2EALw_wcB
 - MQ-135: https://dratek.cz/arduino-platforma/1298-senzor-plynu-mq135-mq-135-pro-arduino.html?gad_source=1&gad_campaignid=17190055571&gbraid=0AAAAACVG_WdMdsI9GgEBoBiqihpy8xbHf&gclid=Cj0KCQiAiqDJBhCXARIsABk2kSkOikeE0O3fDJ5GAutL6nGdgl48FiQheFX2JKIcwGJU9-1FHGK4amEaApDZEALw_wcB
 - DHT-12: https://dratek.cz/ukonceno/1977-i2c-teplomer-a-vlhkomer-dht12-digitalni.html
