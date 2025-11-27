@@ -1,0 +1,32 @@
+/**
+ * @mainpage DE2 – Měření kvality vnitřního prostředí
+ *
+ * @section intro Úvod
+ * Tento projekt slouží jako demonstrační stanice pro měření kvality
+ * vnitřního prostředí. Na základě několika senzorů zobrazuje:
+ * - teplotu a relativní vlhkost vzduchu (DHT12)
+ * - koncentraci prachových částic (GP2Y1010AU0F)
+ * - orientační kvalitu vzduchu / plynů (MQ-135)
+ *
+ * Naměřené hodnoty jsou periodicky zobrazovány na OLED displeji.
+ *
+ * @section hw Hardware
+ * - Mikrokontrolér: ATmega328P (Arduino Uno)
+ * - Senzory:
+ *   - DHT12 – teplota a vlhkost (I2C)
+ *   - GP2Y1010AU0F – prachový senzor (analogový výstup)
+ *   - MQ-135 – plynový senzor (analogový výstup)
+ * - OLED displej připojený přes sběrnici I2C
+ *
+ * @section sw Softwareové moduly
+ * Projekt je rozdělen do několika knihoven:
+ * - @ref dht12 – obsluha senzoru DHT12
+ * - @ref gp2y1010 – obsluha prachového senzoru GP2Y1010
+ * - @ref mq135 – obsluha senzoru MQ-135
+ * - @ref adc – čtení analogových vstupů
+ * - @ref twi – nízkoúrovňová I2C/TWI komunikace
+ * - @ref oled – obsluha OLED displeje
+ * - @ref timer – časování pomocí časovače TIMER1
+ *
+ * 
+ */
