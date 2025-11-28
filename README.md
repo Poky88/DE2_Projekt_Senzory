@@ -83,6 +83,7 @@ OLED displej o úhlopříčce 0,96 palce a rozlišení 128 × 64 pixelů předst
 
 # Popis programu
 Program pravidelně měří teplotu, vlhkost, prašnost a koncentraci plynů pomocí senzorů DHT12, GP2Y1010 a MQ135. Po spuštění inicializuje všechny periférie, senzory, I2C komunikaci a OLED displej. Časovač TIMER1 vytváří přerušení, které nastavuje proměnnou flag_update, podle níž hlavní smyčka pozná, kdy má provést nové měření. Po každé aktualizaci program načte hodnoty senzorů, provede základní výpočty a převede je na použitelné jednotky. Následně výstupy zobrazí na OLED displeji v předem připraveném rozložení. Program tak cyklicky obnovuje data a poskytuje aktuální přehled o kvalitě okolního prostředí.
+Dokumentace kódu: https://poky88.github.io/DE2_Projekt_Senzory/
 
 <div align="center">
 <img width="420" height="747" alt="image" src="https://github.com/user-attachments/assets/8cfadb3d-341a-4a82-8841-df81a7a5a56c" />
