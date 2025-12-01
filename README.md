@@ -92,12 +92,13 @@ Program pravidelně měří teplotu, vlhkost, prašnost a koncentraci plynů pom
 # Demontrační video
 
 
-
 https://github.com/user-attachments/assets/224a8f2f-f5b7-4f19-9710-5e3e66e5539a
 
 
-
 # Demonstrační poster
+
+<img width="1414" height="2000" alt="Create a Wonder Poster" src="https://github.com/user-attachments/assets/c76ef707-2b00-4603-8dff-5bcfcf8620fd" />
+
 
 # Zdroje
 - GP2Y1010: https://dratek.cz/arduino-platforma/1126-opticky-senzor-kvality-ovzdusi-gp2y1010au0f.html?gad_source=1&gad_campaignid=17190055571&gbraid=0AAAAACVG_WdMdsI9GgEBoBiqihpy8xbHf&gclid=Cj0KCQiAiqDJBhCXARIsABk2kSmGebZPVCR5Vj_lhDj5BpFCFtRr2RC84YoECgKVjbpFDe2vHHXAIBkaAld2EALw_wcB
